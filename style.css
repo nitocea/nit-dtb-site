@@ -6,38 +6,50 @@ a {
     text-decoration: none;
 }
 
-
 header {
     background-color: rgb(117, 199, 135);
-    height: 110px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between; /* 子要素を両端に寄せる */
+    align-items: center; /* 子要素を垂直方向の中央に配置 */
+    padding: 0 20px;
 }
 
 .header-logo {
-    float: left;
-    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    line-height: 1;
 }
+
+.header-logo a {
+    margin-top: 10px;
+}
+
 .main-logo {
     color: rgb(255, 255, 255);
+    font-size: 28px;
 }
+
 .site-description {
-    color: rgb(0, 0, 0);
+    color: rgb(34, 58, 39);
     font-size: 17px;
-    position: relative;
-    bottom: 25px;
+    margin-top: 3px;
+    line-height: 1;
 }
 
-.header-list a {
-    float: right;
+.header-list ul {
+    display: flex;
+    gap: 10px;
+}
+
+.header-list li {
     background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(34, 58, 39);
     padding: 10px 20px;
-    color: rgb(38, 65, 43);
+    border-radius: 5px;
+    font-weight: bold;
 }
-.header-list a:hover {
+.header-list li:hover {
     background-color: rgba(255, 255, 255, 0.5);
-}
-
-header h4{
-    float: left;
-    color: rgb(38, 65, 43);
-    padding-left: 20px;
 }
